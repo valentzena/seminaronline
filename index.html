@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seminar Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">SEMINARKUY</div>
+      <ul class="menu">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Kursus</a></li>
+        <li><a href="tentang.html">Deskripsi</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="pembicara.html">Pembicara</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <button class="join" onclick="openJoinModal()">Join</button>
+        <button class="login">Login </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Seminar Online Platform</h1>
+      <p>Platform seminar online menawarkan berbagai kursus</p>
+      <button class="cta" onclick="openJoinModal()">Join For Free</button>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Berbagai Kursus</h3>
+        <p>Berbagai seminar yang dapat anda nikmati.</p>
+      </div>
+      <div class="feature">
+        <h3>Penyajian yang expert</h3>
+        <p>Belajar dari para expert.</p>
+      </div>
+      <div class="feature">
+        <h3>Bebas Akses</h3>
+        <p>Akses dimanapun, kapanpun. </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Join -->
+  <div id="joinModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeJoinModal()">&times;</span>
+      <h2>Join Now</h2>
+      <form id="joinForm" onsubmit="return validateJoinForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+   <!-- TENTANG KAMI -->
+
+   <!-- FOOTER -->
+    <footer>
+      <div class="sosmed" id="kontak">
+        <a href="https://wa.me/6285320218677" target="_blank" rel="noopener noreferrer"><img src="logo wa.jpg" alt=""></a>
+        <a href="https://wa.me/6285320218677" target="_blank" rel="noopener noreferrer"><img src="ig2.jpg" alt=""></a>
+        <a href="https://discord.gg/x6U9BGWH" target="_blank" rel="noopener noreferrer"><img src="logo discord.png" alt=""></a>
+        <a href="https://github.com/valentzena/seminaronline" target="_blank" rel="noopener noreferrer"><img src="logo github.png" alt=""></a>
+      </div>
+    </footer>
+
+
+</body>
+</html>
